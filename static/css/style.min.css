@@ -1,0 +1,53 @@
+.view,body,html{height:100%}.carousel{height:50%}.carousel .carousel-inner,.carousel .carousel-inner .active,.carousel .carousel-inner .carousel-item{height:100%}@media (max-width:776px){.carousel{height:100%}}.page-footer{background-color:#929FBA}
+
+
+.form{
+    max-width: 400px;
+    margin: 45px auto;
+    padding: 0 20px;
+}
+
+.form p {
+    margin: 0 0 20px 0;
+    text-align: left;
+}
+
+.form label{
+    display: block;
+    padding: 10px 0;
+    color: #666;
+    font-weight: bold;
+}
+
+.form input[type=text],
+.form input[type=email],
+.form input[type=number],
+.form input[type=password],
+.form select
+{
+    padding: 10px;
+    max-width: 400px;
+    width: 100%;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.form input:focus,
+.form select:focus,
+.form textarea:focus
+{
+    background: #fafafa;
+}
+
+.form select{
+    padding-left: 6px;
+}
+
+.form:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  }
+  
