@@ -44,7 +44,6 @@
         height: 100vh;
       }
     }
-
   </style>
 </head>
 
@@ -79,8 +78,7 @@
             <a class="nav-link waves-effect" href="" target="_blank">Category</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link waves-effect" href=""
-              target="_blank">About</a>
+            <a class="nav-link waves-effect" href="" target="_blank">About</a>
           </li>
           <li class="nav-item">
             <a class="nav-link waves-effect" href="" target="_blank">Contact Us</a>
@@ -106,16 +104,25 @@
               <i class="fab fa-twitter"></i>
             </a>
           </li>
+          {% if user.is_authenticated %}
+          <p>Hi , {{ user.username }} </p>
+          <p>..</p>
           <li class="nav-item">
-            <a href="" class="nav-link border border-light rounded waves-effect"
-              target="_blank">
+            <a href="{% url 'logout' %}" class="nav-link border border-light rounded waves-effect">
+              <i class="fas fa-sign-in-alt mr-2"></i>Log Out
+            </a>
+          </li>
+          {% else %}
+          <li class="nav-item">
+            <a href="{% url 'login' %}" class="nav-link border border-light rounded waves-effect">
               <i class="fas fa-sign-in-alt mr-2"></i>Login
             </a>
           </li>
+          {% endif %}
+
 
           <li class="nav-item">
-            <a href="" class="nav-link border border-light rounded waves-effect"
-              target="_blank">
+            <a href="" class="nav-link border border-light rounded waves-effect" target="_blank">
               <i class="fas fa-user-plus mr-2"></i>Signup
             </a>
           </li>
@@ -145,7 +152,8 @@
 
       <!--First slide-->
       <div class="carousel-item active">
-        <div class="view" style="background-image: url('https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/8-col/img%282%29.jpg'); background-repeat: no-repeat; background-size: cover;">
+        <div class="view"
+          style="background-image: url('https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/8-col/img%282%29.jpg'); background-repeat: no-repeat; background-size: cover;">
 
           <!-- Mask & flexbox options-->
           <div class="mask rgba-black-strong d-flex justify-content-center align-items-center">
@@ -164,7 +172,8 @@
                 <strong>Coretabs</strong>
               </p>
 
-              <a target="_blank" href="https://forums.coretabs.net/" class="btn btn-outline-white btn-lg">Coretabs Academy
+              <a target="_blank" href="https://forums.coretabs.net/" class="btn btn-outline-white btn-lg">Coretabs
+                Academy
                 <i class="fas fa-graduation-cap ml-2"></i>
               </a>
             </div>
@@ -179,7 +188,8 @@
 
       <!--Second slide-->
       <div class="carousel-item">
-        <div class="view" style="background-image: url('https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/8-col/img%283%29.jpg'); background-repeat: no-repeat; background-size: cover;">
+        <div class="view"
+          style="background-image: url('https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/8-col/img%283%29.jpg'); background-repeat: no-repeat; background-size: cover;">
 
           <!-- Mask & flexbox options-->
           <div class="mask rgba-black-strong d-flex justify-content-center align-items-center">
@@ -198,7 +208,8 @@
                 <strong>Coretabs</strong>
               </p>
 
-              <a target="_blank" href="https://forums.coretabs.net/" class="btn btn-outline-white btn-lg">Coretabs Academy
+              <a target="_blank" href="https://forums.coretabs.net/" class="btn btn-outline-white btn-lg">Coretabs
+                Academy
                 <i class="fas fa-graduation-cap ml-2"></i>
               </a>
             </div>
@@ -213,7 +224,8 @@
 
       <!--Third slide-->
       <div class="carousel-item">
-        <div class="view" style="background-image: url('https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/8-col/img%285%29.jpg'); background-repeat: no-repeat; background-size: cover;">
+        <div class="view"
+          style="background-image: url('https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/8-col/img%285%29.jpg'); background-repeat: no-repeat; background-size: cover;">
 
           <!-- Mask & flexbox options-->
           <div class="mask rgba-black-strong d-flex justify-content-center align-items-center">
@@ -232,7 +244,8 @@
                 <strong>Coretabs</strong>
               </p>
 
-              <a target="_blank" href="https://forums.coretabs.net/" class="btn btn-outline-white btn-lg">Coretabs Academy
+              <a target="_blank" href="https://forums.coretabs.net/" class="btn btn-outline-white btn-lg">Coretabs
+                Academy
                 <i class="fas fa-graduation-cap ml-2"></i>
               </a>
             </div>
@@ -273,11 +286,12 @@
 
     <!--Call to action-->
     <div class="pt-4">
-      <a class="btn btn-outline-white" href="https://mdbootstrap.com/docs/jquery/getting-started/download/" target="_blank"
-        role="button">Download MDB
+      <a class="btn btn-outline-white" href="https://mdbootstrap.com/docs/jquery/getting-started/download/"
+        target="_blank" role="button">Download MDB
         <i class="fas fa-download ml-2"></i>
       </a>
-      <a class="btn btn-outline-white" href="https://mdbootstrap.com/education/bootstrap/" target="_blank" role="button">Start
+      <a class="btn btn-outline-white" href="https://mdbootstrap.com/education/bootstrap/" target="_blank"
+        role="button">Start
         free tutorial
         <i class="fas fa-graduation-cap ml-2"></i>
       </a>
