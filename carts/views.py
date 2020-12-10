@@ -4,6 +4,8 @@ from .models import Cart
 from products.models import Product
 
 # Create your views here.
+
+
 @login_required
 def add_to_cart(request, product_id):
     product = get_object_or_404(Product, pk=product_id)
@@ -29,3 +31,11 @@ def cart(request):
     total_price = user.cart.total_price()
 
     return render(request, 'carts/cart.html', {'products': products, 'total_price': total_price})
+
+
+@login_required
+def clear_cart(request):
+    cart = Cart.objects.get(user=request.user)
+    cart.items.clear()
+
+    return redirect('cart')

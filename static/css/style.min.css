@@ -50,4 +50,127 @@
     outline: 0;
     box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
   }
+
+ .cart-btn-box a {
+   padding: 15px 30px;
+   box-sizing: border-box;
+   background-color: #000;
+   color: #fff;
+   text-transform: uppercase;
+   text-decoration: none;
+   letter-spacing: 1px;
+   border: none;
+   display: inline-block;
+   margin-top: 40px;
+   cursor: pointer;
+   transition: background-color ease-in-out .3s;
+}
+.cart-btn-box a:hover{
+    background-color: #0cbb88;
+}
+
+/*Cart Rules*/
+.cart {
+    margin-top: 48px;
+}
+
+.cart ul {
+    padding: 0;
+}
+
+.cart li {
+    display: block;
+    width: 100%;
+    margin: 20px 0;
+    float: right;
+}
+
+.cart div {
+    float: left;
+    width: 25%;
+}
+
+.cart h3 {
+    margin: 50px 0 0 0;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: left;
+    margin-left: 16px;
+}
+
+.cart p {
+    margin: 50px 0 0 0;
+
+    color: #777777;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.cart-product-img {
+    background: #efefef;
+    background-image: url("image-not-found.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30%;
+    width: 290px;
+    height: 150px;
+}
+
+.cart img {
+    width: 130px;
+}
+
+.cart a {
+    margin: 45px 0 0 0;
+    text-decoration: none;
+}
+
+.cart #cart-summary {
+    border-top: 1px solid #e0e0e0;
+}
+
+.cart a.remove {
+    color: #ffffff;
+    font-weight: bold;
+    background: #e0e0e0;
+    padding: 10px;
+    display: inline-block;
+    border-radius: 100%;
+    line-height: .5;
+}
+
+.cart a.remove:hover {
+    background: #f30;
+}
+
+.cart a.checkout, .cart a.clear {
+    display: block;
+    width: 140px;
+    line-height: 40px;
+    font-size: 16px;
+    background: #222;
+    color: #fff;
+    cursor: pointer;
+    margin: 40px auto;
+}
+
+.cart a.clear {
+    background: #F44336;
+}
+
+
+/* Success Pages */
+a.back {
+    display: block;
+    text-decoration: none;
+    width: 220px;
+    line-height: 40px;
+    font-size: 16px;
+    background: #222;
+    color: #fff;
+    cursor: pointer;
+    margin: 40px auto;
+}
+
   

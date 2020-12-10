@@ -25,11 +25,11 @@ def signup(request):
 
 
 def activate_email(request, uid, token):
-    user= get_object_or_404(User, pk=uid)
+    user = get_object_or_404(User, pk=uid)
     if confirm_email_token_generator.check_token(user, token):
         user.is_active = True
         user.save()
 
         return redirect('login')
     else:
-        return HttpResponseBadRequest('Bad Token')   
+        return HttpResponseBadRequest('Bad Token')

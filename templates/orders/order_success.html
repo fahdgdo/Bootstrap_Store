@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block head_title %}Make Order{% endblock %}
+
+{% block content %}
+<section>
+    <div>
+        <h1 class="text-center my-4 h1">Thank You!</h1>
+        <p class="text-center mb-4"><strong>Please check your email</strong> for further information about your
+            order.</p>
+        <div class="text-center">
+            <a href="{% url 'home' %}" class="btn btn-primary btn-md my-0 p">Continue to homepage</a>
+        </div>
+    </div>
+</section>
+{% endblock %}

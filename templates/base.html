@@ -104,9 +104,13 @@
               <i class="fab fa-twitter"></i>
             </a>
           </li>
+
           {% if user.is_authenticated %}
-          <p>Hi , {{ user.username }} </p>
-          <p>..</p>
+          <li class="nav-item">
+            <a class="nav-link border border-light rounded waves-effect">
+              <i></i>Hi , {{ user.username }}
+            </a>
+          </li>
           <li class="nav-item">
             <a href="{% url 'logout' %}" class="nav-link border border-light rounded waves-effect">
               <i class="fas fa-sign-in-alt mr-2"></i>Log Out
@@ -114,18 +118,20 @@
           </li>
           {% else %}
           <li class="nav-item">
+            <a href="{% url 'signup' %}" class="nav-link border border-light rounded waves-effect">
+              <i class="fas fa-user-plus mr-2"></i>Signup
+            </a>
+          </li>
+          <li class="nav-item">
             <a href="{% url 'login' %}" class="nav-link border border-light rounded waves-effect">
               <i class="fas fa-sign-in-alt mr-2"></i>Login
             </a>
           </li>
+
           {% endif %}
 
 
-          <li class="nav-item">
-            <a href="" class="nav-link border border-light rounded waves-effect" target="_blank">
-              <i class="fas fa-user-plus mr-2"></i>Signup
-            </a>
-          </li>
+
 
 
         </ul>
