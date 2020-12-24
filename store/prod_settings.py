@@ -13,7 +13,7 @@ else:
     DEBUG = False
 
 
-ALLOWED_HOSTS = ['peaceful-escarpment-54364.herokuapp.com']
+ALLOWED_HOSTS = ['peaceful-escarpment-54364.herokuapp.com', 'gdo.pythonanywhere.com']
 
 
 DATABASES = {
